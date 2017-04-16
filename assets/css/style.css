@@ -45,11 +45,18 @@ footer p {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.characters {
+  display: inline-block;
+  width: 140px;
+  height: 180px;
+  border: 2px solid black;
+  margin: 5px auto;
+  background-color: rgba(255,255,255,1)
+}
+
 .characters:hover {
   border-width: 4px;
   border-color: gold;
-  width: 10%;
-  height: 10%;
 }
 
 .activity {
@@ -58,10 +65,6 @@ footer p {
 
 .activity:hover {
   background-color: rgba(255,255,255,0.15);
-}
-
-.characters {
-  border: 2px solid black;
 }
 
 .wrapper {
