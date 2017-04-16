@@ -1,0 +1,74 @@
+* {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+footer p {
+  font-family: 'Bowlby One SC', cursive;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+h3 {
+  font-size: 200%;
+}
+
+h4 {
+  font-size: 150%;
+}
+
+header {
+  border-bottom: 1px solid black;
+  color: gold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+body {
+  background-image: url(../img/bg.jpg);
+}
+
+footer p {
+  color: gold;
+  /*position: absolute;
+  left: 0;
+  bottom: 0;*/
+  height: 60px;
+  width: 100%;
+  overflow:hidden;
+  border-top: 1px solid black;
+  padding-top: 15px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.characters:hover {
+  border-width: 4px;
+  border-color: gold;
+  width: 10%;
+  height: 10%;
+}
+
+.activity {
+  padding: 2%;
+}
+
+.activity:hover {
+  background-color: rgba(255,255,255,0.15);
+}
+
+.characters {
+  border: 2px solid black;
+}
+
+.wrapper {
+  padding-left: 5%; 
+  padding-right: 5%;
+}
+
+.section-title {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
