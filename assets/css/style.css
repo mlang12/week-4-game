@@ -6,6 +6,7 @@ h1,
 h2,
 h3,
 h4,
+button,
 footer p {
   font-family: 'Bowlby One SC', cursive;
 }
@@ -30,19 +31,37 @@ header {
 
 body {
   background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 footer p {
   color: gold;
-  /*position: absolute;
-  left: 0;
-  bottom: 0;*/
   height: 60px;
   width: 100%;
   overflow:hidden;
   border-top: 1px solid black;
   padding-top: 15px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+button {
+  padding: 25px;
+  background-color: gold;
+  color: black;
+  font-size: 125%;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+button:hover{
+  border: 4px solid black;
+  padding: 21px;
+}
+
+button:active{
+  border: 8px solid red;
+  background-color: darkred;
+  padding: 17px;
 }
 
 .characters {

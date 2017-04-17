@@ -9,8 +9,6 @@
     <!-- Style sheets -->
     <!-- Reset -->
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
-    <!-- Bootstrap -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
     <!-- Custom Style -->
@@ -21,14 +19,14 @@
       <h1>
         Star Wars RPG
       </h1>
-      <h3>
+      <h4>
         Battle for the Galaxy...
-      </h3>
+      </h4>
     </header>
 
     <div class="container"> <!-- Open Main Container -->
 
-      <div class="selection activity row"> <!-- Open Selection Section --> 
+      <div class="selection activity"> <!-- Open Selection Section --> 
         <h4 class="section-title">
           Select Your Character
         </h4>
@@ -38,51 +36,59 @@
               Baby Han 
             </p>  
             <img src="./assets/img/han.png" class="char-pic">
+            <span class="hp"></span> <span class="atk"></span>
           </div>
           <div id="leia" class="characters">
             <p class="name">
               Lil Leia
             </p>  
             <img src="./assets/img/leia.png" class="char-pic">
+            <span class="hp"></span> <span class="atk"></span>
           </div>
           <div id="bobo" class="characters">
             <p class="name">
               Bobo 
             </p>    
             <img src="./assets/img/bobo.png" class="char-pic">
+            <span class="hp"></span> <span class="atk"></span>
           </div>
           <div id="darth" class="characters">
             <p class="name">
               Darthy
             </p>   
             <img src="./assets/img/darth.png" class="char-pic">
+            <P>
+              <span class="hp"></span> <span class="atk"></span>
+            </P>
           </div>
         </div>
       </div> <!-- Close Selection Section -->
 
-      <div class="player activity row"> <!-- Open player section -->  
+      <div class="player activity"> <!-- Open player section -->  
         <h4 class="section-title">
           Your Character
         </h4>   
       </div> <!-- Close player Section -->
 
-      <div class="enemies activity row"> <!-- Open Enemies Section -->  
+      <div class="enemies activity"> <!-- Open Enemies Section -->  
         <h4 class="section-title">
-          Enemies
+          Select Enemy
         </h4>   
       </div> <!-- Close Enemies Section -->
 
-      <div class="fight activity row"> <!-- Open Fight Section -->
-        <h4 class="section-title">
-          Fight
-        </h4>   
+      <div class="fight activity"> <!-- Open Fight Section -->
         <button class="attack"> Attack </button>
       </div> <!-- Close Fight Section -->
 
-      <div class="defend activity row"> <!-- Open Defend Section -->  
+      <div class="defend activity"> <!-- Open Defend Section -->  
         <h4 class="section-title">
           Defend Area
         </h4>   
+        <div>
+          <p class="message"></p>
+          <p class="message2"></p>
+          <button class="reset">Reset</button>
+        </div>
       </div> <!-- Close defend section -->
 
     </div><!-- Close Main Container -->
