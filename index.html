@@ -35,7 +35,7 @@
             <p class="name">
               Baby Han 
             </p>  
-            <img src="./assets/img/han.png" class="char-pic">
+            <img src="./assets/img/han.png" class="char-pic"> 
             <P class="stats" >
               <span class="hp"></span> <span class="atk"></span>
             </P>
@@ -83,12 +83,16 @@
       </div> <!-- Close Enemies Section -->
 
       <div class="fight activity"> <!-- Open Fight Section -->
-        <button class="attack"> Attack </button>
-        <div>
-          <p class="message"></p>
-          <p class="message2"></p>
+        <div id="charFight" class="fightmode"></div>
+        <div id="fightC" class="fight">
+          <button class="attack"> Attack </button>
+          <div>
+            <p class="message"></p>
+            <p class="message2"></p>
+          </div>
+          <button class="reset">Reset</button>
         </div>
-        <button class="reset">Reset</button>
+        <div id="enemyFight" class="fightmode"></div>
       </div> <!-- Close Fight Section -->
 
       <div class="defend activity"> <!-- Open Defend Section -->  

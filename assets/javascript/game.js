@@ -77,6 +77,7 @@ $(document).ready(function(){
       this.characters[this.player].hp -= this.characters[this.currentEnemy].counterAttack;
       this.characters[this.currentEnemy].hp -= this.characters[this.player].attack;
       this.characters[this.player].attack += this.characters[this.player].counterAttack;
+      this.redSplash()
     },
 
     //Function handles what happens when a character is clicked
@@ -152,14 +153,17 @@ $(document).ready(function(){
       //Hides the enemy section and shows the fight button and defend areas of DOM
       if(this.mode === "fight"){
         $("#" + this.currentEnemy).appendTo(secDefend);
-
+        //$("#" + this.currentEnemy).appendTo(enemyFight);
+ 
         secEnemies.hide();
         fightButton.show();
         secDefend.show();
+
       }
 
       //If the game has been won or lost hide the fight button and defend areas. Show the reset button.
       if(this.mode === "win" || this.mode === "lose"){
+        $("#fightConsole").attr("id", "fightC")
         fightButton.hide();
         secDefend.hide();
         resetButton.show();
@@ -213,6 +217,16 @@ $(document).ready(function(){
           this.message2 = "";
         }
       }
+    },
+
+    //Animates a splash of red on screen durring a fight
+    redSplash: function() {
+      $(".player").toggleClass("redSplash");
+      $(".defend").toggleClass("redSplash");
+      setTimeout(function(){
+        $(".player").toggleClass("redSplash");
+        $(".defend").toggleClass("redSplash");
+      }, 100);
     }
   };  
 

@@ -58,13 +58,13 @@ button {
 
 button:hover{
   border: 4px solid black;
-  padding: 15px;
+  padding: 13px;
 }
 
 button:active{
   border: 8px solid red;
   background-color: darkred;
-  padding: 17px;
+  padding: 9px;
 }
 
 .characters {
@@ -72,17 +72,22 @@ button:active{
   width: 130px;
   height: 180px;
   border: 2px solid black;
-  margin: 5px auto;
+  margin: 5px;
   background-color: white;
 }
 
 .characters:hover {
   border-width: 4px;
+  margin: 3px;
   border-color: gold;
 }
 
 .activity {
   padding: 2%;
+  -webkit-transition: background-color .5s ease;
+  -moz-transition: background-color .5s ease;
+  -o-transition: background-color .5s ease;
+  transition: background-color .5s ease;
 }
 .activity:hover {
   background-color: rgba(255,255,255,0.15);
@@ -120,3 +125,7 @@ button {
   font-size: 100%;
 }
 
+.redSplash {
+  background-color: rgba(255,0,0,.7)
+
+}
